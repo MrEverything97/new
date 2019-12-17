@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <input  type="text" id="id1" name="a" value="">
+        <input  type="text" id="id2" name="b" value=""> <br><br>
+        <button onclick="add()">Addition(+)</button>
+        <button onclick="sub()">Subtraction(-)</button>
+        <button onclick="mul()">Multiplication(X)</button>
+        <button onclick="_div()">Division(/)</button>
+        </form>
+
+        <div id="id3"></div>
+
+    <script>
+        let a = document.getElementById("id1");
+        let b = document.getElementById('id2');
+    function add(){
+        let c = parseInt(a.value) + parseInt(b.value)
+       document.getElementById("id3").innerHTML= "=" + c;
+    }
+    </script>
+</body>
+</html>

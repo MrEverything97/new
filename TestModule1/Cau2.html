@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <p id = "id1"></p>
+    <p id = "id2"></p>
+</head>
+<body>
+    <script>
+    let n = parseInt(prompt(" How many elements are on the array ?"));
+    let arr = [];
+    for(let i=0;i<n;i++) {
+       arr[i] = parseFloat(prompt("Input element : "));
+    }
+    document.getElementById("id1").innerHTML= "Your array is : " + arr;
+    function tryRemoveFormArray(){
+        let index = prompt("index = ?");
+        for(let i=0;i<n;i++){
+            if(index==i){
+                arr.splice(index,1);
+            }
+        }
+        document.getElementById("id2").innerHTML="Your new array is : " + arr;
+    }
+    tryRemoveFormArray();
+    </script>
+</body>
+</html>
